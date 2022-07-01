@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import TabBar from '../page/TabBar.vue'
+import login from '../page/login.vue'
 
 const routes = [
   {
     path: '',
-    name: 'l',
-    component: TabBar
+    redirect: '/home'
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: login
   },
   {
     path: '/home',
